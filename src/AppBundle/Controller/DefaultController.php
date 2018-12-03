@@ -9,7 +9,6 @@ class DefaultController extends FrontendController
 {
     public function defaultAction(Request $request)
     {
-	$this->disableViewAutoRender();
-	exit;
+        return $this->redirect(\Pimcore\Tool::getHostUrl().'/app');
     }
 }

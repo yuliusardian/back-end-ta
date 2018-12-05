@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-12-03T14:04:23+01:00
+* Generated at: 2018-12-03T14:04:31+01:00
 * Inheritance: no
 * Variants: no
 * Changed by: zulhilmi.giffary (2)
@@ -15,11 +15,11 @@ Fields Summary:
 
 
 return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
-   'id' => '3',
-   'name' => 'SongAlbum',
+   'id' => '6',
+   'name' => 'SongGenre',
    'description' => '',
    'creationDate' => 0,
-   'modificationDate' => 1543842261,
+   'modificationDate' => 1543842271,
    'userOwner' => 2,
    'userModification' => 2,
    'parentClass' => '',

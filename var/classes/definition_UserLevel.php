@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-12-02T18:21:38+01:00
+* Generated at: 2018-12-08T07:46:26+01:00
 * Inheritance: no
 * Variants: no
 * Changed by: zulhilmi.giffary (2)
@@ -12,6 +12,7 @@ Fields Summary:
 - localizedfields [localizedfields]
 -- name [input]
 -- description [textarea]
+- code [input]
 */ 
 
 
@@ -20,7 +21,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'name' => 'UserLevel',
    'description' => '',
    'creationDate' => 0,
-   'modificationDate' => 1543771294,
+   'modificationDate' => 1544251586,
    'userOwner' => 2,
    'userModification' => 2,
    'parentClass' => '',
@@ -141,20 +142,20 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'region' => NULL,
                  'layout' => NULL,
                  'title' => NULL,
-                 'width' => NULL,
-                 'height' => NULL,
+                 'width' => '',
+                 'height' => '',
                  'maxTabs' => NULL,
                  'labelWidth' => NULL,
                  'hideLabelsWhenTabsReached' => NULL,
                  'referencedFields' => 
                 array (
                 ),
-                 'tooltip' => NULL,
-                 'mandatory' => NULL,
-                 'noteditable' => NULL,
+                 'tooltip' => '',
+                 'mandatory' => false,
+                 'noteditable' => false,
                  'index' => NULL,
-                 'locked' => NULL,
-                 'style' => NULL,
+                 'locked' => false,
+                 'style' => '',
                  'permissions' => NULL,
                  'datatype' => 'data',
                  'columnType' => NULL,
@@ -163,6 +164,31 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'invisible' => false,
                  'visibleGridView' => true,
                  'visibleSearch' => true,
+              )),
+              1 => 
+              Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+                 'fieldtype' => 'input',
+                 'width' => NULL,
+                 'queryColumnType' => 'varchar',
+                 'columnType' => 'varchar',
+                 'columnLength' => 190,
+                 'phpdocType' => 'string',
+                 'regex' => '',
+                 'unique' => false,
+                 'name' => 'code',
+                 'title' => 'Code',
+                 'tooltip' => '',
+                 'mandatory' => false,
+                 'noteditable' => false,
+                 'index' => false,
+                 'locked' => false,
+                 'style' => '',
+                 'permissions' => NULL,
+                 'datatype' => 'data',
+                 'relationType' => false,
+                 'invisible' => false,
+                 'visibleGridView' => false,
+                 'visibleSearch' => false,
               )),
             ),
              'locked' => false,

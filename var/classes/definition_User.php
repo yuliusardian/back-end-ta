@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-12-04T17:53:42+01:00
+* Generated at: 2018-12-08T07:59:46+01:00
 * Inheritance: no
 * Variants: no
 * Changed by: zulhilmi.giffary (2)
@@ -14,6 +14,7 @@ Fields Summary:
 - email [email]
 - level [href]
 - isActive [checkbox]
+- rememberToken [input]
 */ 
 
 
@@ -22,7 +23,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'name' => 'User',
    'description' => '',
    'creationDate' => 0,
-   'modificationDate' => 1543942420,
+   'modificationDate' => 1544252386,
    'userOwner' => 2,
    'userModification' => 2,
    'parentClass' => '',
@@ -171,7 +172,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                   'type' => 'enum(\'document\',\'asset\',\'object\')',
                 ),
                  'phpdocType' => '\\Pimcore\\Model\\Document\\Page | \\Pimcore\\Model\\Document\\Snippet | \\Pimcore\\Model\\Document | \\Pimcore\\Model\\Asset | \\Pimcore\\Model\\DataObject\\AbstractObject',
-                 'objectsAllowed' => false,
+                 'objectsAllowed' => true,
                  'assetsAllowed' => false,
                  'assetTypes' => 
                 array (
@@ -183,6 +184,10 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'lazyLoading' => true,
                  'classes' => 
                 array (
+                  0 => 
+                  array (
+                    'classes' => 'UserLevel',
+                  ),
                 ),
                  'pathFormatterClass' => '',
                  'name' => 'level',
@@ -214,6 +219,31 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'noteditable' => false,
                  'index' => false,
                  'locked' => false,
+                 'style' => '',
+                 'permissions' => NULL,
+                 'datatype' => 'data',
+                 'relationType' => false,
+                 'invisible' => false,
+                 'visibleGridView' => false,
+                 'visibleSearch' => false,
+              )),
+              5 => 
+              Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+                 'fieldtype' => 'input',
+                 'width' => NULL,
+                 'queryColumnType' => 'varchar',
+                 'columnType' => 'varchar',
+                 'columnLength' => 190,
+                 'phpdocType' => 'string',
+                 'regex' => '',
+                 'unique' => false,
+                 'name' => 'rememberToken',
+                 'title' => 'rememberToken',
+                 'tooltip' => '',
+                 'mandatory' => false,
+                 'noteditable' => false,
+                 'index' => false,
+                 'locked' => NULL,
                  'style' => '',
                  'permissions' => NULL,
                  'datatype' => 'data',

@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-12-03T14:04:31+01:00
+* Generated at: 2018-12-24T10:24:59+01:00
 * Inheritance: no
 * Variants: no
 * Changed by: zulhilmi.giffary (2)
@@ -19,7 +19,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'name' => 'SongGenre',
    'description' => '',
    'creationDate' => 0,
-   'modificationDate' => 1543842271,
+   'modificationDate' => 1545643498,
    'userOwner' => 2,
    'userModification' => 2,
    'parentClass' => '',

@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-12-03T13:53:52+01:00
+* Generated at: 2018-12-13T08:07:59+01:00
 * Inheritance: no
 * Variants: no
 * Changed by: zulhilmi.giffary (2)
@@ -11,7 +11,6 @@
 Fields Summary: 
 - img [image]
 - name [input]
-- songs [objects]
 */ 
 
 
@@ -20,7 +19,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'name' => 'SongArtist',
    'description' => '',
    'creationDate' => 0,
-   'modificationDate' => 1543841632,
+   'modificationDate' => 1544684878,
    'userOwner' => 2,
    'userModification' => 2,
    'parentClass' => '',
@@ -127,35 +126,6 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'permissions' => NULL,
                  'datatype' => 'data',
                  'relationType' => false,
-                 'invisible' => false,
-                 'visibleGridView' => false,
-                 'visibleSearch' => false,
-              )),
-              2 => 
-              Pimcore\Model\DataObject\ClassDefinition\Data\Objects::__set_state(array(
-                 'fieldtype' => 'objects',
-                 'width' => '',
-                 'height' => '',
-                 'maxItems' => '',
-                 'queryColumnType' => 'text',
-                 'phpdocType' => 'array',
-                 'relationType' => true,
-                 'lazyLoading' => true,
-                 'classes' => 
-                array (
-                ),
-                 'pathFormatterClass' => '',
-                 'name' => 'songs',
-                 'title' => 'songs',
-                 'tooltip' => '',
-                 'mandatory' => false,
-                 'noteditable' => false,
-                 'index' => false,
-                 'locked' => false,
-                 'style' => '',
-                 'permissions' => NULL,
-                 'datatype' => 'data',
-                 'columnType' => NULL,
                  'invisible' => false,
                  'visibleGridView' => false,
                  'visibleSearch' => false,

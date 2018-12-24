@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-12-08T07:59:46+01:00
+* Generated at: 2018-12-24T11:19:07+01:00
 * Inheritance: no
 * Variants: no
 * Changed by: zulhilmi.giffary (2)
@@ -15,6 +15,9 @@ Fields Summary:
 - level [href]
 - isActive [checkbox]
 - rememberToken [input]
+- RecentlyPlayed [fieldcollections]
+- Favourite [fieldcollections]
+- History [fieldcollections]
 */ 
 
 
@@ -23,7 +26,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'name' => 'User',
    'description' => '',
    'creationDate' => 0,
-   'modificationDate' => 1544252386,
+   'modificationDate' => 1545646747,
    'userOwner' => 2,
    'userModification' => 2,
    'parentClass' => '',
@@ -243,10 +246,166 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'mandatory' => false,
                  'noteditable' => false,
                  'index' => false,
+                 'locked' => false,
+                 'style' => '',
+                 'permissions' => NULL,
+                 'datatype' => 'data',
+                 'relationType' => false,
+                 'invisible' => false,
+                 'visibleGridView' => false,
+                 'visibleSearch' => false,
+              )),
+            ),
+             'locked' => false,
+          )),
+          1 => 
+          Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+             'fieldtype' => 'panel',
+             'labelWidth' => 100,
+             'layout' => NULL,
+             'name' => 'RecentlyPlayed',
+             'type' => NULL,
+             'region' => NULL,
+             'title' => 'Recently Played',
+             'width' => NULL,
+             'height' => NULL,
+             'collapsible' => false,
+             'collapsed' => false,
+             'bodyStyle' => '',
+             'datatype' => 'layout',
+             'permissions' => NULL,
+             'childs' => 
+            array (
+              0 => 
+              Pimcore\Model\DataObject\ClassDefinition\Data\Fieldcollections::__set_state(array(
+                 'fieldtype' => 'fieldcollections',
+                 'phpdocType' => '\\Pimcore\\Model\\DataObject\\Fieldcollection',
+                 'allowedTypes' => 
+                array (
+                  0 => 'RecentlyPlayed',
+                ),
+                 'lazyLoading' => true,
+                 'maxItems' => '',
+                 'disallowAddRemove' => false,
+                 'disallowReorder' => false,
+                 'collapsed' => false,
+                 'collapsible' => false,
+                 'name' => 'RecentlyPlayed',
+                 'title' => 'Recently Played',
+                 'tooltip' => '',
+                 'mandatory' => false,
+                 'noteditable' => false,
+                 'index' => false,
                  'locked' => NULL,
                  'style' => '',
                  'permissions' => NULL,
                  'datatype' => 'data',
+                 'columnType' => NULL,
+                 'queryColumnType' => NULL,
+                 'relationType' => false,
+                 'invisible' => false,
+                 'visibleGridView' => false,
+                 'visibleSearch' => false,
+              )),
+            ),
+             'locked' => false,
+          )),
+          2 => 
+          Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+             'fieldtype' => 'panel',
+             'labelWidth' => 100,
+             'layout' => NULL,
+             'name' => 'Favourites',
+             'type' => NULL,
+             'region' => NULL,
+             'title' => 'Favourites',
+             'width' => NULL,
+             'height' => NULL,
+             'collapsible' => false,
+             'collapsed' => false,
+             'bodyStyle' => '',
+             'datatype' => 'layout',
+             'permissions' => NULL,
+             'childs' => 
+            array (
+              0 => 
+              Pimcore\Model\DataObject\ClassDefinition\Data\Fieldcollections::__set_state(array(
+                 'fieldtype' => 'fieldcollections',
+                 'phpdocType' => '\\Pimcore\\Model\\DataObject\\Fieldcollection',
+                 'allowedTypes' => 
+                array (
+                  0 => 'Favourite',
+                ),
+                 'lazyLoading' => true,
+                 'maxItems' => '',
+                 'disallowAddRemove' => false,
+                 'disallowReorder' => false,
+                 'collapsed' => false,
+                 'collapsible' => false,
+                 'name' => 'Favourite',
+                 'title' => 'Favourite',
+                 'tooltip' => '',
+                 'mandatory' => false,
+                 'noteditable' => false,
+                 'index' => false,
+                 'locked' => NULL,
+                 'style' => '',
+                 'permissions' => NULL,
+                 'datatype' => 'data',
+                 'columnType' => NULL,
+                 'queryColumnType' => NULL,
+                 'relationType' => false,
+                 'invisible' => false,
+                 'visibleGridView' => false,
+                 'visibleSearch' => false,
+              )),
+            ),
+             'locked' => false,
+          )),
+          3 => 
+          Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+             'fieldtype' => 'panel',
+             'labelWidth' => 100,
+             'layout' => NULL,
+             'name' => 'History',
+             'type' => NULL,
+             'region' => NULL,
+             'title' => 'History',
+             'width' => NULL,
+             'height' => NULL,
+             'collapsible' => false,
+             'collapsed' => false,
+             'bodyStyle' => '',
+             'datatype' => 'layout',
+             'permissions' => NULL,
+             'childs' => 
+            array (
+              0 => 
+              Pimcore\Model\DataObject\ClassDefinition\Data\Fieldcollections::__set_state(array(
+                 'fieldtype' => 'fieldcollections',
+                 'phpdocType' => '\\Pimcore\\Model\\DataObject\\Fieldcollection',
+                 'allowedTypes' => 
+                array (
+                  0 => 'History',
+                ),
+                 'lazyLoading' => true,
+                 'maxItems' => '',
+                 'disallowAddRemove' => false,
+                 'disallowReorder' => false,
+                 'collapsed' => false,
+                 'collapsible' => false,
+                 'name' => 'History',
+                 'title' => 'History',
+                 'tooltip' => '',
+                 'mandatory' => false,
+                 'noteditable' => false,
+                 'index' => false,
+                 'locked' => NULL,
+                 'style' => '',
+                 'permissions' => NULL,
+                 'datatype' => 'data',
+                 'columnType' => NULL,
+                 'queryColumnType' => NULL,
                  'relationType' => false,
                  'invisible' => false,
                  'visibleGridView' => false,

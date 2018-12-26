@@ -1,8 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-12-24T11:16:08+01:00
-* IP: 127.0.0.1
+* Generated at: 2018-12-25T16:39:15+01:00
 
 
 Fields Summary: 
@@ -26,7 +25,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
      'title' => NULL,
      'width' => NULL,
      'height' => NULL,
-     'collapsible' => NULL,
+     'collapsible' => false,
      'collapsed' => NULL,
      'bodyStyle' => NULL,
      'datatype' => 'layout',
@@ -99,7 +98,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
                  'mandatory' => false,
                  'noteditable' => false,
                  'index' => false,
-                 'locked' => NULL,
+                 'locked' => false,
                  'style' => '',
                  'permissions' => NULL,
                  'datatype' => 'data',
@@ -109,13 +108,13 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
                  'visibleSearch' => false,
               )),
             ),
-             'locked' => NULL,
+             'locked' => false,
           )),
         ),
-         'locked' => NULL,
+         'locked' => false,
       )),
     ),
-     'locked' => NULL,
+     'locked' => false,
   )),
    'dao' => NULL,
 ));

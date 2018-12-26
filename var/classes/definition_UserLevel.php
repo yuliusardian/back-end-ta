@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-12-08T07:46:26+01:00
+* Generated at: 2018-12-25T16:57:53+01:00
 * Inheritance: no
 * Variants: no
 * Changed by: zulhilmi.giffary (2)
@@ -12,7 +12,7 @@ Fields Summary:
 - localizedfields [localizedfields]
 -- name [input]
 -- description [textarea]
-- code [input]
+- levelKey [input]
 */ 
 
 
@@ -21,7 +21,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'name' => 'UserLevel',
    'description' => '',
    'creationDate' => 0,
-   'modificationDate' => 1544251586,
+   'modificationDate' => 1545753470,
    'userOwner' => 2,
    'userModification' => 2,
    'parentClass' => '',
@@ -175,8 +175,8 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'phpdocType' => 'string',
                  'regex' => '',
                  'unique' => false,
-                 'name' => 'code',
-                 'title' => 'Code',
+                 'name' => 'levelKey',
+                 'title' => 'levelKey',
                  'tooltip' => '',
                  'mandatory' => false,
                  'noteditable' => false,

@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-12-03T14:04:31+01:00
+* Generated at: 2018-12-26T04:07:32+01:00
 * Inheritance: no
 * Variants: no
 * Changed by: zulhilmi.giffary (2)
@@ -14,6 +14,7 @@ Fields Summary:
 - file [href]
 - album [href]
 - genre [href]
+- artist [href]
 */ 
 
 
@@ -22,7 +23,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'name' => 'Song',
    'description' => '',
    'creationDate' => 0,
-   'modificationDate' => 1543842271,
+   'modificationDate' => 1545793652,
    'userOwner' => 2,
    'userModification' => 2,
    'parentClass' => '',
@@ -59,7 +60,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
          'title' => NULL,
          'width' => NULL,
          'height' => NULL,
-         'collapsible' => NULL,
+         'collapsible' => false,
          'collapsed' => NULL,
          'bodyStyle' => NULL,
          'datatype' => 'layout',
@@ -99,7 +100,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'mandatory' => false,
                  'noteditable' => false,
                  'index' => false,
-                 'locked' => NULL,
+                 'locked' => false,
                  'style' => '',
                  'permissions' => NULL,
                  'datatype' => 'data',
@@ -124,7 +125,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'mandatory' => false,
                  'noteditable' => false,
                  'index' => false,
-                 'locked' => NULL,
+                 'locked' => false,
                  'style' => '',
                  'permissions' => NULL,
                  'datatype' => 'data',
@@ -169,7 +170,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'mandatory' => false,
                  'noteditable' => false,
                  'index' => false,
-                 'locked' => NULL,
+                 'locked' => false,
                  'style' => '',
                  'permissions' => NULL,
                  'datatype' => 'data',
@@ -214,7 +215,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'mandatory' => false,
                  'noteditable' => false,
                  'index' => false,
-                 'locked' => NULL,
+                 'locked' => false,
                  'style' => '',
                  'permissions' => NULL,
                  'datatype' => 'data',
@@ -259,6 +260,51 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'mandatory' => false,
                  'noteditable' => false,
                  'index' => false,
+                 'locked' => false,
+                 'style' => '',
+                 'permissions' => NULL,
+                 'datatype' => 'data',
+                 'columnType' => NULL,
+                 'invisible' => false,
+                 'visibleGridView' => false,
+                 'visibleSearch' => false,
+              )),
+              5 => 
+              Pimcore\Model\DataObject\ClassDefinition\Data\Href::__set_state(array(
+                 'fieldtype' => 'href',
+                 'width' => '',
+                 'assetUploadPath' => '',
+                 'relationType' => true,
+                 'queryColumnType' => 
+                array (
+                  'id' => 'int(11)',
+                  'type' => 'enum(\'document\',\'asset\',\'object\')',
+                ),
+                 'phpdocType' => '\\Pimcore\\Model\\Document\\Page | \\Pimcore\\Model\\Document\\Snippet | \\Pimcore\\Model\\Document | \\Pimcore\\Model\\Asset | \\Pimcore\\Model\\DataObject\\AbstractObject',
+                 'objectsAllowed' => true,
+                 'assetsAllowed' => false,
+                 'assetTypes' => 
+                array (
+                ),
+                 'documentsAllowed' => false,
+                 'documentTypes' => 
+                array (
+                ),
+                 'lazyLoading' => true,
+                 'classes' => 
+                array (
+                  0 => 
+                  array (
+                    'classes' => 'SongArtist',
+                  ),
+                ),
+                 'pathFormatterClass' => '',
+                 'name' => 'artist',
+                 'title' => 'artist',
+                 'tooltip' => '',
+                 'mandatory' => false,
+                 'noteditable' => false,
+                 'index' => false,
                  'locked' => NULL,
                  'style' => '',
                  'permissions' => NULL,
@@ -269,10 +315,10 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'visibleSearch' => false,
               )),
             ),
-             'locked' => NULL,
+             'locked' => false,
           )),
         ),
-         'locked' => NULL,
+         'locked' => false,
       )),
     ),
      'locked' => NULL,

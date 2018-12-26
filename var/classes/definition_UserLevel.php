@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-12-25T16:57:53+01:00
+* Generated at: 2018-12-26T04:25:06+01:00
 * Inheritance: no
 * Variants: no
 * Changed by: zulhilmi.giffary (2)
@@ -13,6 +13,7 @@ Fields Summary:
 -- name [input]
 -- description [textarea]
 - levelKey [input]
+- code [input]
 */ 
 
 
@@ -21,7 +22,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'name' => 'UserLevel',
    'description' => '',
    'creationDate' => 0,
-   'modificationDate' => 1545753470,
+   'modificationDate' => 1545794706,
    'userOwner' => 2,
    'userModification' => 2,
    'parentClass' => '',
@@ -182,6 +183,31 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'noteditable' => false,
                  'index' => false,
                  'locked' => false,
+                 'style' => '',
+                 'permissions' => NULL,
+                 'datatype' => 'data',
+                 'relationType' => false,
+                 'invisible' => false,
+                 'visibleGridView' => false,
+                 'visibleSearch' => false,
+              )),
+              2 => 
+              Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+                 'fieldtype' => 'input',
+                 'width' => NULL,
+                 'queryColumnType' => 'varchar',
+                 'columnType' => 'varchar',
+                 'columnLength' => 190,
+                 'phpdocType' => 'string',
+                 'regex' => '',
+                 'unique' => false,
+                 'name' => 'code',
+                 'title' => 'code',
+                 'tooltip' => '',
+                 'mandatory' => false,
+                 'noteditable' => false,
+                 'index' => false,
+                 'locked' => NULL,
                  'style' => '',
                  'permissions' => NULL,
                  'datatype' => 'data',

@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-12-26T12:21:17+01:00
+* Generated at: 2018-12-26T10:13:48+01:00
 * IP: 127.0.0.1
 
 
@@ -11,7 +11,7 @@ Fields Summary:
 
 
 return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
-   'key' => 'Favourite',
+   'key' => 'Queue',
    'parentClass' => '',
    'title' => '',
    'group' => '',
@@ -39,12 +39,12 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
          'name' => 'Layout',
          'type' => NULL,
          'region' => NULL,
-         'title' => '',
+         'title' => NULL,
          'width' => NULL,
          'height' => NULL,
-         'collapsible' => false,
-         'collapsed' => false,
-         'bodyStyle' => '',
+         'collapsible' => NULL,
+         'collapsed' => NULL,
+         'bodyStyle' => NULL,
          'datatype' => 'layout',
          'permissions' => NULL,
          'childs' => 
@@ -103,7 +103,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
                  'mandatory' => false,
                  'noteditable' => false,
                  'index' => false,
-                 'locked' => false,
+                 'locked' => NULL,
                  'style' => '',
                  'permissions' => NULL,
                  'datatype' => 'data',
@@ -113,10 +113,10 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
                  'visibleSearch' => false,
               )),
             ),
-             'locked' => false,
+             'locked' => NULL,
           )),
         ),
-         'locked' => false,
+         'locked' => NULL,
       )),
     ),
      'locked' => NULL,

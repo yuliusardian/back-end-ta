@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-12-24T11:19:07+01:00
+* Generated at: 2018-12-26T13:26:11+01:00
 * Inheritance: no
 * Variants: no
 * Changed by: zulhilmi.giffary (2)
@@ -18,6 +18,7 @@ Fields Summary:
 - RecentlyPlayed [fieldcollections]
 - Favourite [fieldcollections]
 - History [fieldcollections]
+- Queue [fieldcollections]
 */ 
 
 
@@ -26,7 +27,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'name' => 'User',
    'description' => '',
    'creationDate' => 0,
-   'modificationDate' => 1545646747,
+   'modificationDate' => 1545827170,
    'userOwner' => 2,
    'userModification' => 2,
    'parentClass' => '',
@@ -296,7 +297,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'mandatory' => false,
                  'noteditable' => false,
                  'index' => false,
-                 'locked' => NULL,
+                 'locked' => false,
                  'style' => '',
                  'permissions' => NULL,
                  'datatype' => 'data',
@@ -348,7 +349,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'mandatory' => false,
                  'noteditable' => false,
                  'index' => false,
-                 'locked' => NULL,
+                 'locked' => false,
                  'style' => '',
                  'permissions' => NULL,
                  'datatype' => 'data',
@@ -396,6 +397,58 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'collapsible' => false,
                  'name' => 'History',
                  'title' => 'History',
+                 'tooltip' => '',
+                 'mandatory' => false,
+                 'noteditable' => false,
+                 'index' => false,
+                 'locked' => false,
+                 'style' => '',
+                 'permissions' => NULL,
+                 'datatype' => 'data',
+                 'columnType' => NULL,
+                 'queryColumnType' => NULL,
+                 'relationType' => false,
+                 'invisible' => false,
+                 'visibleGridView' => false,
+                 'visibleSearch' => false,
+              )),
+            ),
+             'locked' => false,
+          )),
+          4 => 
+          Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+             'fieldtype' => 'panel',
+             'labelWidth' => 100,
+             'layout' => NULL,
+             'name' => 'Queue',
+             'type' => NULL,
+             'region' => NULL,
+             'title' => 'Queue',
+             'width' => NULL,
+             'height' => NULL,
+             'collapsible' => false,
+             'collapsed' => false,
+             'bodyStyle' => '',
+             'datatype' => 'layout',
+             'permissions' => NULL,
+             'childs' => 
+            array (
+              0 => 
+              Pimcore\Model\DataObject\ClassDefinition\Data\Fieldcollections::__set_state(array(
+                 'fieldtype' => 'fieldcollections',
+                 'phpdocType' => '\\Pimcore\\Model\\DataObject\\Fieldcollection',
+                 'allowedTypes' => 
+                array (
+                  0 => 'Queue',
+                ),
+                 'lazyLoading' => true,
+                 'maxItems' => '',
+                 'disallowAddRemove' => false,
+                 'disallowReorder' => false,
+                 'collapsed' => false,
+                 'collapsible' => false,
+                 'name' => 'Queue',
+                 'title' => 'Queue',
                  'tooltip' => '',
                  'mandatory' => false,
                  'noteditable' => false,

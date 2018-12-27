@@ -1,7 +1,8 @@
 <?php 
 
 /** 
-* Generated at: 2018-12-25T16:39:15+01:00
+* Generated at: 2018-12-27T12:46:09+01:00
+* IP: 127.0.0.1
 
 
 Fields Summary: 
@@ -25,7 +26,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
      'title' => NULL,
      'width' => NULL,
      'height' => NULL,
-     'collapsible' => false,
+     'collapsible' => NULL,
      'collapsed' => NULL,
      'bodyStyle' => NULL,
      'datatype' => 'layout',
@@ -78,7 +79,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
                   'type' => 'enum(\'document\',\'asset\',\'object\')',
                 ),
                  'phpdocType' => '\\Pimcore\\Model\\Document\\Page | \\Pimcore\\Model\\Document\\Snippet | \\Pimcore\\Model\\Document | \\Pimcore\\Model\\Asset | \\Pimcore\\Model\\DataObject\\AbstractObject',
-                 'objectsAllowed' => false,
+                 'objectsAllowed' => true,
                  'assetsAllowed' => false,
                  'assetTypes' => 
                 array (
@@ -90,6 +91,10 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
                  'lazyLoading' => false,
                  'classes' => 
                 array (
+                  0 => 
+                  array (
+                    'classes' => 'Song',
+                  ),
                 ),
                  'pathFormatterClass' => '',
                  'name' => 'song',
@@ -114,7 +119,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
          'locked' => false,
       )),
     ),
-     'locked' => false,
+     'locked' => NULL,
   )),
    'dao' => NULL,
 ));
